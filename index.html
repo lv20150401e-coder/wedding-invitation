@@ -79,13 +79,11 @@ body{
   }
   .envSeal{
     position:absolute;
-    left:50%;
-    top:58%;              /* 調整位置 */
-    transform:translate(-50%,-50%);
-    width:160px;            /* 放大 */
-    z-index:6;
-  
-    animation: floatHint 2.2s ease-in-out infinite;
+    inset:auto 0 0 0;        /* 左右自動 */
+    margin:auto;             /* 水平置中 */
+    top:58%;
+    width:160px;
+    transform:translateY(-50%);
   }
   
   .tapHint{
